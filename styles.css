@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas:
+    "header"
+    "sidebar"
+    "dashboard";
+}
+
+svg {
+  transform: scale(0.12);
+}
+
+img {
+  transform: scale(0.15);
+  border-radius: 50%;
+}
+#bigavatar {
+  transform: scale(0.2);
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.header-top {
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile {
+  grid-area: profile;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #74c0fc;
+}
+
+.dashboard {
+  grid-area: dashboard;
+}
+
+@media (min-width: 50em) {
+  body {
+    grid-template-areas:
+      "sidebar header header"
+      "sidebar dashboard dashboard"
+      "sidebar dashboard dashboard"
+      "sidebar dashboard dashboard";
+  }
+}

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="search-bar">
+          <label for="search">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="#000000"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <circle
+                  cx="116"
+                  cy="116"
+                  r="84"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></circle>
+                <line
+                  x1="175.4"
+                  y1="175.4"
+                  x2="224"
+                  y2="224"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+              </svg>
+            </span>
+          </label>
+
+          <input type="search" id="search" name="search" />
+        </div>
+        <div class="notifications">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="192"
+            height="192"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <path
+              d="M56.2,112a71.8,71.8,0,1,1,143.6,0h0c0,35.8,7.5,56.6,14.1,68a8,8,0,0,1-6.9,12H49a8,8,0,0,1-6.9-12c6.6-11.4,14.1-32.2,14.1-68Z"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></path>
+            <path
+              d="M96,192v8a32,32,0,0,0,64,0v-8"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></path>
+            <path
+              d="M183.4,24a105,105,0,0,1,38,42.1"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></path>
+            <path
+              d="M34.6,66.1A105,105,0,0,1,72.6,24"
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="16"
+            ></path>
+          </svg>
+          <img src="./img/avatar1.png" alt="avatar" />
+          <p>Morgan Oakley</p>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="profile">
+          <img src="./img/avatar1.png" alt="avatar" id="bigavatar"/>
+          <p>Hi there,</p>
+          <p>Morgan Oakley (@morgan)</p>
+        </div>
+        <div class="buttons">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <div class="logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="192"
+          height="192"
+          fill="#000000"
+          viewBox="0 0 256 256"
+        >
+          <rect width="256" height="256" fill="none"></rect>
+          <circle
+            cx="128"
+            cy="128"
+            r="96"
+            fill="none"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          ></circle>
+          <line
+            x1="128"
+            y1="32"
+            x2="128"
+            y2="224"
+            fill="none"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          ></line>
+          <line
+            x1="192"
+            y1="56.5"
+            x2="192"
+            y2="199.5"
+            fill="none"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          ></line>
+          <line
+            x1="160"
+            y1="37.5"
+            x2="160"
+            y2="218.5"
+            fill="none"
+            stroke="#000000"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="16"
+          ></line>
+        </svg>
+        <p>Dashboard</p>
+      </div>
+      <div class="main-sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href=""
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="192"
+                  height="192"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <path
+                    d="M152,208V160a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v48a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V115.5a8.3,8.3,0,0,1,2.6-5.9l80-72.7a8,8,0,0,1,10.8,0l80,72.7a8.3,8.3,0,0,1,2.6,5.9V208a8,8,0,0,1-8,8H160A8,8,0,0,1,152,208Z"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path></svg
+                >Home</span
+              ></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href=""
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="192"
+                  height="192"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <circle
+                    cx="128"
+                    cy="96"
+                    r="64"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-miterlimit="10"
+                    stroke-width="16"
+                  ></circle>
+                  <path
+                    d="M31,216a112,112,0,0,1,194,0"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path></svg
+                >Profile</span
+              ></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href=""
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="192"
+                  height="192"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <line
+                    x1="96"
+                    y1="104"
+                    x2="160"
+                    y2="104"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></line>
+                  <line
+                    x1="96"
+                    y1="136"
+                    x2="160"
+                    y2="136"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></line>
+                  <path
+                    d="M149.7,195.9l-14.8,24.7a8.1,8.1,0,0,1-13.8,0l-14.8-24.7a7.9,7.9,0,0,0-6.8-3.9H40a8,8,0,0,1-8-8V56a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8V184a8,8,0,0,1-8,8H156.5A7.9,7.9,0,0,0,149.7,195.9Z"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path></svg
+                >Messages</span
+              ></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href=""
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="192"
+                  height="192"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <line
+                    x1="128"
+                    y1="80"
+                    x2="128"
+                    y2="128"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></line>
+                  <line
+                    x1="169.6"
+                    y1="152"
+                    x2="128"
+                    y2="128"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></line>
+                  <polyline
+                    points="71.8 99.7 31.8 99.7 31.8 59.7"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></polyline>
+                  <path
+                    d="M65.8,190.2a88,88,0,1,0,0-124.4l-34,33.9"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path></svg
+                >History</span
+              ></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href=""
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="192"
+                  height="192"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <polyline
+                    points="172 104 113.3 160 84 132"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></polyline>
+                  <rect
+                    x="40"
+                    y="40"
+                    width="176"
+                    height="176"
+                    rx="8"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></rect></svg
+                >Tasks</span
+              ></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href=""
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="192"
+                  height="192"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <circle
+                    cx="128"
+                    cy="140"
+                    r="40"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></circle>
+                  <path
+                    d="M196,116a59.8,59.8,0,0,1,48,24"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path>
+                  <path
+                    d="M12,140a59.8,59.8,0,0,1,48-24"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path>
+                  <path
+                    d="M70.4,216a64.1,64.1,0,0,1,115.2,0"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path>
+                  <path
+                    d="M60,116A32,32,0,1,1,91.4,78"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path>
+                  <path
+                    d="M164.6,78A32,32,0,1,1,196,116"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path></svg
+                >Communities</span
+              ></a
+            >
+          </li>
+        </ul>
+        <ul class="settings-sidebar">
+          <li class="nav-item">
+            <a href=""
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="192"
+                  height="192"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <circle
+                    cx="128"
+                    cy="128"
+                    r="48"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></circle>
+                  <path
+                    d="M183.7,65.1q3.8,3.5,7.2,7.2l27.3,3.9a103.2,103.2,0,0,1,10.2,24.6l-16.6,22.1s.3,6.8,0,10.2l16.6,22.1a102.2,102.2,0,0,1-10.2,24.6l-27.3,3.9s-4.7,4.9-7.2,7.2l-3.9,27.3a103.2,103.2,0,0,1-24.6,10.2l-22.1-16.6a57.9,57.9,0,0,1-10.2,0l-22.1,16.6a102.2,102.2,0,0,1-24.6-10.2l-3.9-27.3q-3.7-3.5-7.2-7.2l-27.3-3.9a103.2,103.2,0,0,1-10.2-24.6l16.6-22.1s-.3-6.8,0-10.2L27.6,100.8A102.2,102.2,0,0,1,37.8,76.2l27.3-3.9q3.5-3.7,7.2-7.2l3.9-27.3a103.2,103.2,0,0,1,24.6-10.2l22.1,16.6a57.9,57.9,0,0,1,10.2,0l22.1-16.6a102.2,102.2,0,0,1,24.6,10.2Z"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path></svg
+                >Settings</span
+              ></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href=""
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="192"
+                  height="192"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <circle
+                    cx="128"
+                    cy="128"
+                    r="96"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></circle>
+                  <circle cx="128" cy="180" r="12"></circle>
+                  <path
+                    d="M128,144v-8a28,28,0,1,0-28-28"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path></svg
+                >Support</span
+              ></a
+            >
+          </li>
+          <li class="nav-item">
+            <a href=""
+              ><span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="192"
+                  height="192"
+                  fill="#000000"
+                  viewBox="0 0 256 256"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <circle
+                    cx="128"
+                    cy="140"
+                    r="20"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></circle>
+                  <line
+                    x1="128"
+                    y1="160"
+                    x2="128"
+                    y2="184"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></line>
+                  <rect
+                    x="40"
+                    y="88"
+                    width="176"
+                    height="128"
+                    rx="8"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></rect>
+                  <path
+                    d="M92,88V52a36,36,0,0,1,72,0V88"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></path></svg
+                >Privacy</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <main class="dashboard">
+      <h3>Your Projects</h3>
+      <div class="projects">
+        <div class="cardgroup1">
+          <div class="card1">
+            <h4>Rock-Paper-Scissors</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              sint quis dignissimos pariatur excepturi dicta laudantium
+              voluptatum! Sed magni expedita ea adipisci quo dicta quam corrupti
+              natus ut. Est, reprehenderit! Labore odio alias in distinctio
+              mollitia ipsam illo vel placeat rem officiis similique libero
+              eligendi, nihil obcaecati dolorem ducimus nam facilis consequuntur
+              repudiandae, magnam fuga? Cum voluptates ab ut beatae.
+            </p>
+          </div>
+          <div class="card2">
+            <h4>Etch-A-Sketch</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              sint quis dignissimos pariatur excepturi dicta laudantium
+              voluptatum! Sed magni expedita ea adipisci quo dicta quam corrupti
+              natus ut. Est, reprehenderit! Labore odio alias in distinctio
+              mollitia ipsam illo vel placeat rem officiis similique libero
+              eligendi, nihil obcaecati dolorem ducimus nam facilis consequuntur
+              repudiandae, magnam fuga? Cum voluptates ab ut beatae.
+            </p>
+          </div>
+          <div class="card3">
+            <h4>Calculator</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              sint quis dignissimos pariatur excepturi dicta laudantium
+              voluptatum! Sed magni expedita ea adipisci quo dicta quam corrupti
+              natus ut. Est, reprehenderit! Labore odio alias in distinctio
+              mollitia ipsam illo vel placeat rem officiis similique libero
+              eligendi, nihil obcaecati dolorem ducimus nam facilis consequuntur
+              repudiandae, magnam fuga? Cum voluptates ab ut beatae.
+            </p>
+          </div>
+          <div class="card4">
+            <h4>Sing-Up-Form</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              sint quis dignissimos pariatur excepturi dicta laudantium
+              voluptatum! Sed magni expedita ea adipisci quo dicta quam corrupti
+              natus ut. Est, reprehenderit! Labore odio alias in distinctio
+              mollitia ipsam illo vel placeat rem officiis similique libero
+              eligendi, nihil obcaecati dolorem ducimus nam facilis consequuntur
+              repudiandae, magnam fuga? Cum voluptates ab ut beatae.
+            </p>
+          </div>
+          <div class="card5">
+            <h4>Landing-Page</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              sint quis dignissimos pariatur excepturi dicta laudantium
+              voluptatum! Sed magni expedita ea adipisci quo dicta quam corrupti
+              natus ut. Est, reprehenderit! Labore odio alias in distinctio
+              mollitia ipsam illo vel placeat rem officiis similique libero
+              eligendi, nihil obcaecati dolorem ducimus nam facilis consequuntur
+              repudiandae, magnam fuga? Cum voluptates ab ut beatae.
+            </p>
+          </div>
+          <div class="card6">
+            <h4>Admin-Dashboard</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              sint quis dignissimos pariatur excepturi dicta laudantium
+              voluptatum! Sed magni expedita ea adipisci quo dicta quam corrupti
+              natus ut. Est, reprehenderit! Labore odio alias in distinctio
+              mollitia ipsam illo vel placeat rem officiis similique libero
+              eligendi, nihil obcaecati dolorem ducimus nam facilis consequuntur
+              repudiandae, magnam fuga? Cum voluptates ab ut beatae.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="announcements">
+        <h3>Announcements</h3>
+        <div class="cardgroup2">
+          <div class="card7">
+            <h4>Site Maintenance</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur deleniti explicabo quia quod ab inventore blanditiis,
+              alias possimus reiciendis corrupti, velit assumenda animi,
+              laudantium porro impedit quam temporibus. Perspiciatis, illo.
+            </p>
+          </div>
+          <div class="card8">
+            <h4>Community Share Day</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur deleniti explicabo quia quod ab inventore blanditiis,
+              alias possimus reiciendis corrupti, velit assumenda animi,
+              laudantium porro impedit quam temporibus. Perspiciatis, illo.
+            </p>
+          </div>
+          <div class="card9">
+            <h4>Updated Privacy Policy</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur deleniti explicabo quia quod ab inventore blanditiis,
+              alias possimus reiciendis corrupti, velit assumenda animi,
+              laudantium porro impedit quam temporibus. Perspiciatis, illo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="trending">
+          <h3>Trending</h3>
+          <div class="cardgroup3">
+            <div class="profile1">
+                <img src="./img/avatar2.png" alt="avatar" />
+                <p>@alexa</p>
+                <p>No Traffic Maker</p>
+              </div>
+          </div>
+            <div class="profile2">
+                <img src="./img/avatar3.png" alt="avatar" />
+                <p>@kendall</p>
+                <p>Life Changing App</p>
+              </div>
+          </div>
+            <div class="profile3">
+                <img src="./img/avatar1.png" alt="avatar" />
+                <p>@morgan</p>
+                <p>Super Cool Project</p>
+              </div>
+          </div>
+          <div class="profile4">
+            <img src="./img/avatar4.png" alt="avatar" />
+            <p>@tegan</p>
+            <p>World Peace Builder</p>
+          </div>
+      </div>
+      </div>
+    </main>
+  </body>
+</html>
