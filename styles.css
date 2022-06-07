@@ -1,11 +1,12 @@
 html {
   box-sizing: border-box;
-}
-body {
-  margin: 0;
   min-height: 100vh;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.wrapper {
   display: grid;
-  gap: 20px;
+
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-areas:
     "header"
@@ -14,31 +15,105 @@ body {
 }
 
 svg {
-  transform: scale(0.12);
+  width: 24px;
+  height: auto;
 }
 
 img {
-  transform: scale(0.15);
+  width: 70px;
+  height: auto;
+
   border-radius: 50%;
+  object-fit: contain;
 }
 #bigavatar {
-  transform: scale(0.2);
+  width: 100px;
+  height: auto;
 }
 
 .header {
+  margin-left: 1.5em;
   grid-area: header;
   display: grid;
+  height: 220px;
   grid-template-columns: 1fr;
+  background-color: white;
+  grid-template-rows: 1fr 1fr;
 }
 
 .header-top {
-  margin: 0%;
+  display: grid;
+  grid-template-columns: 0.6fr 0.4fr;
+  align-items: center;
+  margin-top: 1em;
+  font-size: 20px;
+}
+
+.search-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 1em;
+}
+
+input {
+  width: 95%;
+  height: 3em;
+  border-radius: 1.5em;
+  border-style: none;
+  background-color: #dee2e6;
+}
+
+.notifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notifications img {
+  margin-right: 1.5em;
+  margin-left: 1.5em;
+}
+
+.header-bottom {
+  display: grid;
+  grid-template-columns: 0.6fr 0.4fr;
+  align-items: center;
+  margin-bottom: 1em;
 }
 .profile {
-  grid-area: profile;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 1em;
+}
+.profile img {
+  margin-right: 1.5em;
+}
+.profile p {
+  margin: 0;
+}
+.profile p:nth-child(2) {
+  font-size: 25px;
+}
+.buttons {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  margin: 0 7em 0 0;
+}
+button {
+  background-color: #74c0fc;
+  color: white;
+  font-size: 20px;
+  border-radius: 1em;
+  padding: 0;
+  border-style: none;
+  width: 5em;
+  height: 2em;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .sidebar {
@@ -48,10 +123,11 @@ img {
 
 .dashboard {
   grid-area: dashboard;
+  background-color: #dee2e6;
 }
 
 @media (min-width: 50em) {
-  body {
+  .wrapper {
     grid-template-areas:
       "sidebar header header"
       "sidebar dashboard dashboard"
