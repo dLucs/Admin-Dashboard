@@ -335,6 +335,22 @@ a:visited {
   font-size: 15px;
   padding: 1.5em 1.5em 0 1.5em;
   font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5em 0 1.5em 1.5em;
+}
+
+.icons svg {
+  padding-right: 1em;
+  cursor: pointer;
 }
 
 .card h4 {
@@ -415,6 +431,9 @@ a:visited {
   padding-right: 1.5em;
 }
 
+.profile2 p:nth-child(even) {
+  font-weight: 300;
+}
 @media (min-width: 50em) {
   .wrapper {
     grid-template-areas:
